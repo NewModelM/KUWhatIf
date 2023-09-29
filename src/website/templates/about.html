@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block title %}About{% endblock %}
+{% block content %}
+<html>
+  <head>
+    <title>About</title>
+  </head>
+  <body>
+    <h1>
+      <img src="{{ url_for('static', filename='img/KU-Logo.png') }}" alt="Logo">
+       What If
+    </h1>
+    <h2> Purpose:</h2>
+    <p2 class="center padding background border limited-width text-color">
+        KU What If is a website to assist both students and advisors alike, 
+        in measuring the progress of a student's major within Kutztown University. 
+        One of the biggest issues of college for a student is gauging progress of their 
+        major which often requires the oversight and assistance of an academic advisor. 
+        The KU What If application expedites the process for both the student and advisor 
+        by organizing their credits into an easy to read format. The website takes a student’s 
+        transcript, and uses it to compare the student’s academic progress to the academic 
+        requirements needed for any major, whether it is the student’s current major or a 
+        possible new major. It provides information on courses the student’s taken, credits 
+        they’ve fulfilled, and what other courses the student needs to take to complete the selected degree.
+    </p2>
+    <h2>How to Use:</h2>
+    <div class="usage center padding background border limited-width text-color">
+        <ul>
+          <li>Upload unofficial transcript</li>
+          <li>Select your settings</li>
+          <li>Review the courses detected</li>
+          <li>Final version of transcript diplayed</li>
+          <li>Print results</li>
+        </ul>
+      </div>
+  </body>
+</html>
+{% endblock %}

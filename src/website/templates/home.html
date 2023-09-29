@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+{% block content %}
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>
+      <img src="{{ url_for('static', filename='img/KU-Logo.png') }}" alt="Logo">
+       What If
+    </h1>
+    <a href="/settings"><button>Settings</button></a>
+  </body>
+</html>
+{% endblock %}

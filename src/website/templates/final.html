@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block title %}Final{% endblock %}
+{% block content %}
+<html>
+  <head>
+    <title>Final</title>
+  </head>
+  <body>
+    <h2>Final Transcript</h2>
+
+    <h3> Completed Courses</h3>
+    <p1>
+      {% for goodcourse in good_credits  %}
+        <span>{{ goodcourse.dept }} {{ goodcourse.course }} </span>
+        <span class="credit">{{ goodcourse.credit }}</span><br>
+      {% endfor %}
+    </p1>
+    <h4> Incomplete Courses</h4>
+    <p1>
+      {% for badcourse in bad_credits %}
+        <span>{{ badcourse.dept }} {{ badcourse.course }} </span>
+        <span class="credit">{{ badcourse.credit }}</span><br>
+      {% endfor %}
+    </p1>
+  </body>
+</html>
+{% endblock %}
