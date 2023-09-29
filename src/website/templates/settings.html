@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% block title %}Settings{% endblock %}
+{% block content %}
+<html>
+  <head>
+    <title>Settings</title>
+  </head>
+  <body>
+    <h2>Settings</h2>
+    <form action="#" method="POST">
+        <label for="transcript">Upload Transcript File:</label>
+        <input type="file" id="transcript" name="transcript">
+      
+        <label for="current-major">Current Major:</label>
+        <select id="current-major" name="current-major">
+          <option value="Computer Science">Computer Science</option>
+          <option value="Electrical Engineering">Information Science</option>
+        </select>
+      
+        <label for="current-year">Current Year of School:</label>
+        <select id="current-year" name="current-year">
+          <option value="Freshman">Freshman</option>
+          <option value="Sophomore">Sophomore</option>
+          <option value="Junior">Junior</option>
+          <option value="Senior">Senior</option>
+        </select>
+      
+        <label for="desired-major">Desired Major (optional):</label>
+        <input type="text" id="desired-major" name="desired-major">
+      
+        <button type="submit">Submit</button>
+      </form>
+  </body>
+</html>
+{% endblock %}
